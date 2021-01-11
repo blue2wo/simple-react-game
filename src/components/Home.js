@@ -53,6 +53,8 @@ const StyledMainMenu = styled.div`
     a {
       color: #f8f8f8;
       text-decoration: none;
+      display:inline-block;
+      width: 100%
     }
 
     &:hover {
@@ -63,7 +65,7 @@ const StyledMainMenu = styled.div`
   }
 `;
 
-const Home = (player, handleOnNameChange) => {
+const Home = ({player, handleOnNameChange}) => {
   return (
     <StyledContainer>
       <StyledMainMenu>
